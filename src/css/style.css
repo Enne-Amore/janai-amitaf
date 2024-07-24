@@ -1,0 +1,89 @@
+/* Cabeçalho */
+#cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cabecalho .menu-titulo {
+    position: relative;
+    background-color: var(--roxa);
+    width: 100vw;
+    border-radius: 0 0 2em 2em;
+    padding: 1em;
+}
+#cabecalho .menu-titulo .icone {
+    position: absolute;
+    top: 8vh;
+    left: 2em;
+}
+#cabecalho .nav {
+    background-color: var(--rosa-escura);
+    width: 90vw;
+    border-radius: 0 0 2em 2em;
+}
+#cabecalho .nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 10em;
+}
+#cabecalho .nav ul #selecionada {
+    background-color: var(--rosa-neutra);
+    color: white;
+}
+#cabecalho .nav ul a {
+    padding: 1em 2em;
+    border-radius: 1em;
+    font-weight: 600;
+    transition: .2s;
+}
+#cabecalho .nav ul a:hover {
+    background-color: var(--rosa-clara);
+    color: var(--rosa-escura);
+}
+/* #cabecalho .nav ul a:active {
+    background-color: var(--rosa-neutra);
+    color: white;
+} */
+#cabecalho .titulo {
+    text-align: center;
+}
+
+/* Conteúdo */
+#conteudo {
+    display: flex;
+    justify-content: center;
+    margin: 1em auto 6em;
+}
+#conteudo .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#conteudo .sobre .explicacao {
+    display: flex;
+    align-items: center;
+}
+#conteudo .sobre .explicacao p {
+    background-color: var(--amarela);
+    color: #03010D;
+    width: 20em;
+    height: max-content;
+    padding: .7em 1em;
+    border-radius: 1em;
+}
+
+/* Rodapé */
+#rodape .img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+:root {
+    --rosa-clara: #F1ACF2;
+    --rosa-neutra: #E057F2;
+    --rosa-escura: #C522F2;
+    --roxa: #5C0CF2;
+    --amarela: #F2B706;
+    --padrao: "Open Sans", sans-serif;
+}
