@@ -9,10 +9,11 @@
     }
     #cabecalho .menu-titulo .icone {
         top: 2.6vh;
+        left: .4em;
         font-size: 4.2em;
     }
     #cabecalho .menu-titulo .titulo {
-        margin-left: 15%;
+        margin-left: 12%;
     }
     #cabecalho .menu-titulo .titulo h1 {
         font-size: 3.2em;
@@ -26,11 +27,12 @@
         border-radius: 0 0 4em 4em;
     }
     #cabecalho .nav ul {
-        margin: auto;
+        margin: auto 4%;
     }
     #cabecalho .nav ul a {
         font-size: 2.5em;
-        padding: .8em 1em;
+        padding: .7em .8em;
+        border-radius: 1em;
     }
 
     #conteudo {
@@ -64,8 +66,56 @@
         font-size: 2.5em;
     }
 
+    #conteudo .servicos .subsecoes {
+        gap: 10em;
+    }
+    #conteudo .servicos .subsecoes .precos .img img {
+        border-radius: 3em 3em 0 0;
+    }
+    #conteudo .servicos .subsecoes .regras .img img {
+        border-radius: 0 0 3em 3em;
+    }
+    #conteudo .servicos .subsecoes .precos,
+    #conteudo .servicos .subsecoes .regras,
+    #conteudo .servicos .subsecoes .condicoes {
+        flex-direction: column;
+        align-items: center;
+    }
+    #conteudo .servicos .subsecoes .precos .descricao,
+    #conteudo .servicos .subsecoes .regras .descricao {
+        width: 94.5%;
+        gap: 2em;
+        padding: 2em 3em 3.5em;
+    }
+    #conteudo .servicos .subsecoes .precos .descricao {
+        border-radius: 0 0 3em 3em;
+    }
+    #conteudo .servicos .subsecoes .regras .descricao {
+        border-radius: 3em 3em 0 0;
+    }
+    #conteudo .servicos .subsecoes .precos .descricao p,
+    #conteudo .servicos .subsecoes .regras .descricao p {
+        font-size: 2.5em;
+    }
+    #conteudo .servicos .subsecoes .precos .descricao a,
+    #conteudo .servicos .subsecoes .regras .descricao a {
+        font-size: 2.6em;
+    }
+    #conteudo .servicos .subsecoes .condicoes {
+        gap: 7em;
+    }
+    #conteudo .servicos .subsecoes .condicoes .tabela {
+        border-radius: 25px;
+    }
+    #conteudo .servicos .subsecoes .condicoes .tabela .titulo tr th {
+        font-size: 3em;
+    }
+    #conteudo .servicos .subsecoes .condicoes .tabela .dados tr td {
+        font-size: 2.5em;
+    }
+
     #conteudo #topo {
-        font-size: 8em;
+        font-size: 7em;
         padding: 3%;
         right: 4%;
     }

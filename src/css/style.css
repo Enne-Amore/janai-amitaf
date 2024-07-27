@@ -22,7 +22,8 @@
     cursor: pointer;
     transition: .2s;
 }
-#cabecalho .menu-titulo .icone:hover {
+#cabecalho .menu-titulo .icone:hover,
+#cabecalho .menu-titulo .icone:focus-visible {
     background-color: var(--rosa-neutra);
 }
 #cabecalho .menu-titulo .icone:active {
@@ -57,8 +58,13 @@
     margin: auto 15%;
 }
 #cabecalho .nav ul #selecionada {
-    background-color: var(--rosa-neutra);
+    background: radial-gradient(78.22% 70.71% at 50% 50%, var(--rosa-neutra) 50%, var(--rosa-escura) 100%);
     color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
+}
+#cabecalho .nav ul #selecionada:hover,
+#cabecalho .nav ul #selecionada:focus-visible {
+    background: var(--rosa-escura);
 }
 #cabecalho .nav ul a {
     padding: 1em 1.5em;
@@ -66,7 +72,8 @@
     font-size: 1.4em;
     font-weight: 600;
 }
-#cabecalho .nav ul a:hover {
+#cabecalho .nav ul a:hover,
+#cabecalho .nav ul a:focus-visible {
     background-color: var(--rosa-clara);
     color: white;
 }
@@ -80,7 +87,7 @@
 }
 #conteudo > section > h1 {
     background: linear-gradient(90deg, var(--rosa-clara) 0%, rgba(255, 255, 255, 0.00) 100%);
-    color: #03010D;
+    color: var(--preta);
     border-radius: 25px 0px 0px 25px;
     margin: 1em auto 1.5em;
     padding: .5em 1em;
@@ -106,7 +113,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.10));
 }
 #conteudo .sobre .explicacao .descricao p {
-    color: #03010D;
+    color: var(--preta);
     font: normal 400 24px;
     line-height: 35px;
 }
@@ -148,12 +155,107 @@
     transform: scale(1.1);
 }
 #conteudo .projetos .cards .card h2 {
-    color: #03010D;
+    color: var(--preta);
     font-size: 1em;
     font-weight: 400;
     text-align: center;
     width: 100%;
     padding: .5em 1em;
+    transition: .2s;
+}
+#conteudo .projetos .cards .card:hover h2 {
+    color: var(--cinza);
+}
+
+#conteudo .servicos .subsecoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5em;
+}
+#conteudo .servicos .subsecoes .precos,
+#conteudo .servicos .subsecoes .regras,
+#conteudo .servicos .subsecoes .condicoes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#conteudo .servicos .subsecoes .precos .img,
+#conteudo .servicos .subsecoes .regras .img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
+}
+#conteudo .servicos .subsecoes .precos .img img,
+#conteudo .servicos .subsecoes .regras .img img {
+    width: 100%;
+    height: 100%;
+}
+#conteudo .servicos .subsecoes .precos .img img {
+    border-radius: 1em 0 1em 1em;
+}
+#conteudo .servicos .subsecoes .regras .img img {
+    border-radius: 0 1em 1em;
+}
+#conteudo .servicos .subsecoes .precos .descricao,
+#conteudo .servicos .subsecoes .regras .descricao {
+    background-color: var(--amarela);
+    padding: 1em;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
+}
+#conteudo .servicos .subsecoes .precos .descricao {
+    border-radius: 0 1em 1em 0;
+}
+#conteudo .servicos .subsecoes .regras .descricao {
+    border-radius: 1em 0 0 1em;
+}
+#conteudo .servicos .subsecoes .precos .descricao p,
+#conteudo .servicos .subsecoes .regras .descricao p {
+    color: var(--preta);
+    line-height: 35px;
+}
+#conteudo .servicos .subsecoes .precos .descricao a,
+#conteudo .servicos .subsecoes .regras .descricao a {
+    background-color: var(--rosa-escura);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 30px;
+    padding: .5em 1em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+#conteudo .servicos .subsecoes .precos .descricao a:hover,
+#conteudo .servicos .subsecoes .regras .descricao a:hover {
+    background-color: var(--rosa-neutra);
+}
+#conteudo .servicos .subsecoes .precos .descricao a:active,
+#conteudo .servicos .subsecoes .regras .descricao a:active {
+    background-color: var(--rosa-clara);
+}
+#conteudo .servicos .subsecoes .condicoes {
+    gap: 4em;
+}
+#conteudo .servicos .subsecoes .condicoes .tabela {
+    border-radius: 30px;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+#conteudo .servicos .subsecoes .condicoes .tabela .titulo tr th {
+    background-color: var(--roxa);
+    border-radius: 30px 30px 0px 0px;
+    padding: 1em;
+    font-size: 1.1em;
+}
+#conteudo .servicos .subsecoes .condicoes .tabela .dados tr td {
+    color: var(--preta);
+    text-align: center;
+    padding: .5em 1em;
+}
+#conteudo .servicos .subsecoes .condicoes .tabela .dados tr:nth-child(even) {
+    background-color: var(--rosa-clara);
 }
 
 #conteudo #topo {
@@ -198,4 +300,5 @@
     --roxa: #6C0CF2;
     --amarela: #F2B705;
     --cinza: #F0F0F0;
+    --preta: #03010D;
 }

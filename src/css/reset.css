@@ -14,7 +14,6 @@
 }
 
 body {
-    background-color: white;
     color: white;
     font: 1.5vw Bitter;
     max-width: 100vw;
@@ -51,6 +50,7 @@ button {
     --roxa: #6C0CF2;
     --amarela: #F2B705;
     --cinza: #F0F0F0;
+    --preta: #03010D;
 }
 
 /* Estilização da barrinha de rolagem */
