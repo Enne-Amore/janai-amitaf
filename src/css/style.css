@@ -68,7 +68,7 @@
     color: var(--preta);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
     padding: 2.5em 3em 4em;
-    width: 40vw;
+    max-width: 40vw;
     border-bottom-right-radius: 1em;
     margin: auto;
     display: flex;
