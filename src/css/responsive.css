@@ -63,7 +63,7 @@
     }
     #conteudo > section > h1 {
         font-size: 3.2em;
-        margin-bottom: 1em;
+        margin-bottom: 5em;
     }
     #conteudo .sobre .explicacao {
         flex-direction: column;
@@ -155,7 +155,7 @@
     #conteudo .galaxia-estorias .capa {
         max-width: 70vw;
         height: auto;
-        margin: 5em auto;
+        margin-bottom: 5em;
     }
     #conteudo .cometa-heidi .textos,
     #conteudo .galaxia-estorias .textos {
