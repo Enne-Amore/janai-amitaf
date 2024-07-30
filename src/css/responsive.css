@@ -22,6 +22,28 @@
         font-size: 2.5em;
         margin: auto 5%;
     }
+    #cabecalho .modal-container .menu {
+        max-width: 65vw;
+    }
+    #cabecalho .modal-container .menu .voltar {
+        font-size: 4em;
+        top: .2em;
+        left: .2em;
+    }
+    #cabecalho .modal-container .menu .perfil .foto {
+        width: 100px;
+    }
+    #cabecalho .modal-container .menu .perfil .nome-pronome h2,
+    #cabecalho .modal-container .menu .links h2 {
+        font-size: 2.5em;
+    }
+    #cabecalho .modal-container .menu .perfil .nome-pronome h3,
+    #cabecalho .modal-container .menu .links a {
+        font-size: 2em;
+    }
+    #cabecalho .modal-container .menu hr {
+        margin: 2.5em auto;
+    }
     #cabecalho .nav {
         width: 85vw;
         border-radius: 0 0 4em 4em;
@@ -80,10 +102,17 @@
     #conteudo .servicos .subsecoes .condicoes {
         flex-direction: column;
         align-items: center;
+        max-width: 85vw;
+        margin: auto;
+    }
+    #conteudo .servicos .subsecoes .precos .img,
+    #conteudo .servicos .subsecoes .regras .img {
+        width: 100%;
+        height: 100%;
     }
     #conteudo .servicos .subsecoes .precos .descricao,
     #conteudo .servicos .subsecoes .regras .descricao {
-        width: 94.5%;
+        width: fit-content;
         gap: 2em;
         padding: 2em 3em 3.5em;
     }
@@ -112,6 +141,34 @@
     }
     #conteudo .servicos .subsecoes .condicoes .tabela .dados tr td {
         font-size: 2.5em;
+    }
+
+    #conteudo .cards .descricao {
+        font-size: 2.5em;
+    }
+    #conteudo .cards .cartas,
+    #conteudo .commissions-pets .pets {
+        gap: 7em;
+    }
+
+    #conteudo .cometa-heidi .capa,
+    #conteudo .galaxia-estorias .capa {
+        max-width: 70vw;
+        height: auto;
+        margin: 5em auto;
+    }
+    #conteudo .cometa-heidi .textos,
+    #conteudo .galaxia-estorias .textos {
+        width: 85vw;
+    }
+    #conteudo .cometa-heidi .textos p,
+    #conteudo .galaxia-estorias .textos p,
+    #conteudo .galaxia-estorias .textos ol {
+        font-size: 2.5em;
+        text-indent: 30px;
+    }
+    #conteudo .galaxia-estorias .textos ol li {
+        margin-left: 30px;
     }
 
     #conteudo #topo {

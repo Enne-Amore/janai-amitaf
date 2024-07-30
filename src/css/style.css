@@ -68,6 +68,7 @@
     color: var(--preta);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
     padding: 2.5em 3em 4em;
+    width: 40vw;
     border-bottom-right-radius: 1em;
     margin: auto;
     display: flex;
@@ -139,7 +140,7 @@
 }
 #cabecalho .modal-container .menu .links a {
     color: var(--rosa-escura);
-    font-size: 24px;
+    font-size: 1.2em;
     padding: .4em .9em;
     border-radius: 1em;
 }
@@ -288,6 +289,8 @@
 }
 #conteudo .servicos .subsecoes .precos .img,
 #conteudo .servicos .subsecoes .regras .img {
+    width: 400px;
+    height: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
 }
 #conteudo .servicos .subsecoes .precos .img img {
@@ -299,7 +302,7 @@
 #conteudo .servicos .subsecoes .precos .descricao,
 #conteudo .servicos .subsecoes .regras .descricao {
     background-color: var(--amarela);
-    padding: .8em 1em 1em;
+    padding: .8em 1em 1.2em;
     width: 45%;
     display: flex;
     flex-direction: column;
