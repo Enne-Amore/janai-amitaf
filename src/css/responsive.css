@@ -63,7 +63,7 @@
     }
     #conteudo > section > h1 {
         font-size: 3.2em;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
     }
     #conteudo .sobre .explicacao {
         flex-direction: column;
