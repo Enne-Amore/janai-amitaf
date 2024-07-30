@@ -1,42 +1,31 @@
 // Abrir o menu
 // Chamando a tag com uma constante
-const menu = document.getElementById('menu')
+const btn_menu = document.getElementById('menu')
+const menu = document.getElementById('modal-container')
 
 // Aplicando a função de abrir o menu
-menu.addEventListener('click', () => {
-    if (nav.style.display = 'none') {
-        nav.style.display = 'block'
+btn_menu.addEventListener('click', () => {
+    if (menu.style.display = 'none') {
+        menu.style.display = 'block'
     }
 })
 
 // Acesso ao menu usando o teclado
-menu.addEventListener('keypress', (tecla) => {
+btn_menu.addEventListener('keypress', (tecla) => {
     if (tecla.key === 'Enter') {
         tecla.target.click()
-
-        // Deixando a primeira opção do menu focalizada ao abrí-lo
-        // const inicio = document.getElementsByTagName('a')[0]
-        // inicio.focus()
-
     }
 })
 
 // Sair do menu
 // Chamada das tags por ID's
-const logo = window.document.querySelector('.logo')
-const nav = window.document.querySelector('.nav')
-const conteudo = window.document.getElementById('conteudo')
-const rodape = window.document.getElementById('rodape')
-
-// Adicionar o evento nelas
-if (innerWidth < 1200) {
-    logo.addEventListener('click', sairDoMenu)
-    nav.addEventListener('click', sairDoMenu)
-    conteudo.addEventListener('click', sairDoMenu)
-    rodape.addEventListener('click', sairDoMenu)
-}
+const transparencia = document.getElementById('transparencia')
+const btn_fechar = document.getElementById('voltar')
 
 // Aplicando função de sair do menu
-function sairDoMenu() {
-    nav.style.display = 'none'
+transparencia.addEventListener('click', fecharMenu)
+btn_fechar.addEventListener('click', fecharMenu)
+
+function fecharMenu() {
+    menu.style.display = 'none'
 }
