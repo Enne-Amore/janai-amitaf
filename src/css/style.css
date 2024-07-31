@@ -46,12 +46,12 @@
     font-weight: 500;
 }
 #cabecalho .modal-container {
+    background-color: transparent;
     display: none;
     width: max-content;
     height: max-content;
     z-index: 2;
     border: 0;
-    animation: fade .1s ease-out;
 }
 #cabecalho .modal-container .transparencia {
     position: fixed;
@@ -60,6 +60,8 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(2px);
+    animation: fade .1s ease-out;
 }
 #cabecalho .modal-container .menu {
     position: relative;
@@ -67,7 +69,7 @@
     background: white;
     color: var(--preta);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
-    padding: 2.5em 3em 4em;
+    padding: 2.5em 2em 4em;
     max-width: 40vw;
     border-bottom-right-radius: 1em;
     margin: auto;
@@ -76,6 +78,7 @@
     align-items: flex-start;
     justify-content: center;
     gap: 1em;
+    animation: esquerda .4s ease-out;
 }
 #cabecalho .modal-container .menu .voltar {
     position: absolute;
@@ -132,6 +135,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0 1em;
 }
 #cabecalho .modal-container .menu .links h2 {
     font-size: 1.4em;
@@ -395,7 +399,7 @@
 }
 #conteudo .commissions-pets .pets .pet {
     width: auto;
-    height: 333px;
+    height: 300px;
 }
 
 #conteudo .cometa-heidi .capa,
@@ -455,15 +459,4 @@
 /* Rodapé */
 #rodape .img img {
     margin-bottom: -1vh;
-}
-
-/* Variáveis CSS */
-:root {
-    --rosa-clara: #F1ACF2;
-    --rosa-neutra: #E057F2;
-    --rosa-escura: #C522F2;
-    --roxa: #6C0CF2;
-    --amarela: #F2B705;
-    --cinza: #F0F0F0;
-    --preta: #03010D;
 }

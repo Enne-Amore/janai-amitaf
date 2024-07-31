@@ -150,6 +150,11 @@
     #conteudo .commissions-pets .pets {
         gap: 7em;
     }
+    #conteudo .cards .cartas .carta,
+    #conteudo .commissions-pets .pets .pet {
+        max-width: 60vw;
+        height: auto;
+    }
 
     #conteudo .cometa-heidi .capa,
     #conteudo .galaxia-estorias .capa {
