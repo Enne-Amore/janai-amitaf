@@ -78,7 +78,7 @@
     align-items: flex-start;
     justify-content: center;
     gap: 1em;
-    animation: esquerda .4s ease-out;
+    animation: esquerda .4s ease-out .2s both;
 }
 #cabecalho .modal-container .menu .voltar {
     position: absolute;
@@ -205,12 +205,14 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
     font-size: 1.6em;
     font-weight: 500;
+    animation: esquerda 1s ease-out .1s both;
 }
 #conteudo .sobre .explicacao {
     display: flex;
     align-items: start;
     justify-content: center;
     gap: 1em;
+    animation: esquerda 1s ease-out .3s both;
 }
 #conteudo .sobre .explicacao .descricao {
     background-color: var(--amarela);
@@ -235,6 +237,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 2em;
+    animation: esquerda 1s ease-out .3s both;
 }
 #conteudo .projetos .cards .card {
     background-color: var(--amarela);
@@ -283,6 +286,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 5em;
+    animation: esquerda 1s ease-out .3s both;
 }
 #conteudo .servicos .subsecoes .precos,
 #conteudo .servicos .subsecoes .regras,
@@ -378,6 +382,7 @@
     margin: auto;
     margin-bottom: 3em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.10));
+    animation: esquerda 1s ease-out .3s both;
 }
 #conteudo .cards .cartas,
 #conteudo .commissions-pets .pets {
@@ -386,6 +391,7 @@
     align-items: center;
     justify-content: center;
     gap: 5em;
+    animation: esquerda 1s ease-out .3s both;
 }
 #conteudo .cards .cartas .carta img,
 #conteudo .commissions-pets .pets .pet img {
@@ -408,6 +414,7 @@
     height: 400px;
     margin: auto;
     margin-bottom: 3em;
+    animation: esquerda 1s ease-out .3s both;
 }
 #conteudo .cometa-heidi .capa img,
 #conteudo .galaxia-estorias .capa img {
@@ -423,6 +430,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 45px;
+    animation: esquerda 1s ease-out .3s both;
 }
 #conteudo .galaxia-estorias .textos ol li {
     margin-left: 60px;
@@ -457,6 +465,11 @@
 }
 
 /* Rodapé */
+#rodape {
+    animation: baixo 2s ease-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+}
 #rodape .img img {
     margin-bottom: -1vh;
 }

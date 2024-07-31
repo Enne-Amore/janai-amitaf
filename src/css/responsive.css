@@ -181,4 +181,8 @@
         padding: 3%;
         right: 4%;
     }
+
+    #rodape {
+        animation-range: cover 0% cover 10%;
+    }
 }
