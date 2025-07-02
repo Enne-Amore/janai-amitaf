@@ -10,7 +10,7 @@
 
 ## 🎞️ Pré-visualização
 
- <img src="img/preview.png" alt="Pré-visualização do site" width="340" height="200">
+ <img src="img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
 
 
 ## ⚡ Funcionalidades
@@ -42,6 +42,7 @@
  ├── docs/                   # Arquivos de documentação do projeto
  │   ├── prototipos-de-tela/ 
  │   ├── autorias.txt
+ │   ├── preview.mp4
  ├── fonts/                  # Arquivos das fontes utilizadas  
  │   ├── Bitter/
  ├── img/                    # Imagens utilizadas 
