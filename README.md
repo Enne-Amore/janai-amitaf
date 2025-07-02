@@ -92,6 +92,13 @@
  | Preta       | `#03010D`   |
 
 
+## 🔤 Fontes Tipográficas
+
+ - **Bitter**  
+   Exemplo de uso:  
+   `font-family: "bitter";`
+
+
 ## 🌟 Referências de Uso
 
  - [Ícones do Google](https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200)
