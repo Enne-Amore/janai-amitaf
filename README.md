@@ -8,6 +8,11 @@
  [Clique aqui para acessar o website](https://enne-amore.github.io/janai-amitaf/)
 
 
+## 🎞️ Pré-visualização
+
+ <img src="img/preview.png" alt="Pré-visualização do site" width="340" height="200">
+
+
 ## ⚡ Funcionalidades
 
  - Menu de informações abrível e fechável
