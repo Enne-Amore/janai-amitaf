@@ -460,9 +460,6 @@
     background-color: var(--cinza);
     color: var(--roxa);
 }
-#conteudo #topo:focus-visible {
-    outline: auto;
-}
 
 /* Rodapé */
 #rodape {

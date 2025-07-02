@@ -44,10 +44,6 @@ img {
     transition: .3s ease-out;
 }
 
-:focus {
-    outline: 0;
-}
-
 /* Variáveis CSS */
 :root {
     --rosa-clara: #F1ACF2;

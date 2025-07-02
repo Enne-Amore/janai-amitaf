@@ -14,6 +14,7 @@ btn_menu.addEventListener('click', () => {
 btn_menu.addEventListener('keypress', (tecla) => {
     if (tecla.key === 'Enter') {
         tecla.target.click()
+        btn_fechar.focus()
     }
 })
 
@@ -29,3 +30,11 @@ btn_fechar.addEventListener('click', fecharMenu)
 function fecharMenu() {
     menu.style.display = 'none'
 }
+
+// Fechar menu usando o teclado
+btn_fechar.addEventListener('keypress', (tecla) => {
+    if (tecla.key === 'Enter') {
+        tecla.target.click()
+        btn_menu.focus()
+    }
+})
