@@ -6,18 +6,18 @@
     <meta name="author" content="Janai Amitáf Produções">
     <meta name="keywords" content="Janai, artes, desenhos, escritas, ilustrações, editoração, estórias">
     <meta name="descrition" content="Janai Amitáf apresenta suas principais obras artísticas">
-    <title>Janai Amitáf Produções</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Uma Estória De Galáxias - Janai Amitáf Produções</title>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <!-- Fontes -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- JavaScript -->
-    <script src="js/nav.js" defer></script>
-    <script src="js/menu.js" defer></script>
-    <script src="js/topo.js" defer></script>
+    <script src="../js/nav.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/topo.js" defer></script>
 </head>
 <body>
     <header id="cabecalho">
@@ -43,7 +43,7 @@
 
                 <article class="perfil">
                     <figure class="foto">
-                        <img src="img/janai-amitaf.png" alt="Foto de Janai Amitáf">
+                        <img src="../img/janai-amitaf.png" alt="Foto de Janai Amitáf">
                     </figure>
                     
                     <div class="nome-pronome">
@@ -102,15 +102,15 @@
 
         <nav class="nav">
             <ul>
-                <a href="index.html" aria-label="Ver introdução sobre" id="selecionada">
+                <a href="../../index.html" aria-label="Ver introdução sobre">
                     Sobre
                 </a>
 
-                <a href="view/projetos.html" aria-label="Ver quais são os projetos realizados">
+                <a href="projetos.html" aria-label="Ver quais são os projetos realizados" id="selecionada">
                     Projetos
                 </a>
 
-                <a href="view/produtos-servicos.html" aria-label="Ver quais são os produtos e serviços">
+                <a href="produtos-servicos.html" aria-label="Ver quais são os produtos e serviços">
                     Serviços
                 </a>
             </ul>
@@ -118,24 +118,64 @@
     </header>
 
     <main id="conteudo">
-        <section class="sobre">
-            <h1>Sobre</h1>
+        <section class="galaxia-estorias">
+            <h1>Uma Galáxia De Estórias</h1>
 
-            <article class="explicacao">
-                <figure>
-                    <img src="img/logo.png" alt="Logo de artista">
-                </figure>
+            <figure class="capa">
+                <img src="../img/galaxia-capa.png" alt="Capa: Uma Galáxia De Estórias">
+            </figure>
 
-                <div class="descricao">
-                    <p>
-                        Janai Amitáf Produções é uma empresa focada em duas frentes: colocar minhas histórias no mundo e ajudar outros criativos a botarem as suas.
-                    </p>
+            <div class="textos">
+                <p>
+                    Via Lúmina é uma galáxia ficcional muito parecida com a nossa, na qual se passam boa parte das minhas histórias.
+                </p>
 
-                    <p>
-                        É uma iniciativa sobre sonhos e sobre ser apaixonado por espalha-los por aí. Criando para esquisites e uniques com olhos brilhantes e imaginação de multiverso.
-                    </p>
-                </div>
-            </article>
+                <p>
+                    Ela é cheia de vida e magia com aproximadamente 0,1% dos 300 bilhões de sistemas estelares, contendo alguma forma de vida.
+                </p>
+
+                <p>
+                    E estima-se que dessas sejam 3 mil espécies inteligentes, capazes de desenvolver culturas e civilizações.
+                </p>
+            </div>
+
+            <figure class="capa">
+                <img src="../img/radar-galactico.png" alt="Radar Galáctico" style="box-shadow: none;">
+            </figure>
+
+            <div class="textos">
+                <p>
+                    O mapeamento padrão é uma das poucas coisas boas impostas pelo Império do Sol, antes disso era preciso colocar os mapas de cada grande civilização um sobre o outro para chegar em algum lugar.
+                    Assim a Terra, por exemplo fica em: Terra. Gama. 5.6.3
+                </p>
+
+                <ol>
+                    <legend>Funciona assim:</legend>
+
+                    <li>
+                        Começando do quadrante superior esquerdo no mapa, chamado de Alpha, daí vamos em sentido horário: Beta, Gama e Delta, o inferior esquerdo.
+                    </li>
+                
+                    <li>
+                        A galáxia tem seus braços circulares marcados no mapa. Pegue seu quadrante e conte os arcos.
+                    </li>
+                
+                    <li>
+                        Os quadrantes são divididos por linhas de coordenada, formando dez seções. Precisa contá-las em sentido horário.
+                    </li>
+                
+                    <li>
+                        Dentro dessa seção, os sistemas estelares são nomeadas com o nome do planeta com mais indivíduos conscientes. Ache o sistema desejado.
+                    </li>
+                    <li>
+                        Agora é só contar os planetas.
+                    </li>
+                </ol>
+
+                <p>
+                    As localizações são indicadas com: Nome do sistema, Quadrante, Arco, Seção, Número do planeta.
+                </p>
+            </div>
         </section>
 
         <span class="material-symbols-outlined sr-only" id="topo" aria-hidden="true" aria-label="Volte ao topo da página clicando aqui" tabindex="0">
@@ -145,7 +185,7 @@
 
     <footer id="rodape">
         <figure class="img">
-            <img src="img/estrelas.png" alt="Estrelas do espaço">
+            <img src="../img/estrelas.png" alt="Estrelas do espaço">
         </figure>
     </footer>
 </body>
