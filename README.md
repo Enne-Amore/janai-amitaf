@@ -26,6 +26,38 @@
  </p>
 
 
+## 📂 Estrutura do Projeto
+
+ ```plaintext
+ janai-amitaf/
+ ├── css/                    # Arquivos CSS
+ │   ├── reset.css       
+ │   ├── responsive.css  
+ │   ├── style.css       
+ ├── docs/                   # Arquivos de documentação do projeto
+ │   ├── prototipos-de-tela/ 
+ │   ├── autorias.txt
+ ├── fonts/                  # Arquivos das fontes utilizadas  
+ │   ├── Bitter/
+ ├── img/                    # Imagens utilizadas 
+ ├── js/                     # Arquivos JavaScript
+ │   ├── menu.js
+ │   ├── nav.js
+ │   ├── topo.js
+ ├── view/                   # Arquivos de páginas secundárias
+ │   ├── cards.html
+ │   ├── cometa-heidi.html
+ │   ├── comissions-pets.html
+ │   ├── galaxia-estorias.html
+ │   ├── produtos-servicos.html
+ │   ├── projetos.html
+ ├── .gitignore
+ ├── index.html              # Arquivo principal de renderização
+ ├── LICENSE                 # Arquivo de licença do projeto
+ ├── README.md
+ ```
+
+
 ## 🌈 Cores
 
  | Cor         | Hexadecimal |
