@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌟 Janai Amitáf Produções
 
-## Getting Started
+ Portfólio web de Janai que apresenta suas principais obras artísticas
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌐 Aplicação Hospedada
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ [Clique aqui para acessar o website](https://enne-amore.github.io/janai-amitaf/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎞️ Pré-visualização
 
-## Learn More
+ <img src="src/assets/preview.gif" alt="Pré-visualização do site" width="340" height="200">
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚡ Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ - Menu de informações abrível e fechável
+ - Barra horizontal de navegação entre páginas
+ - Mais acessibilidade usando a tecla "tab"
+ - Efeitos de "hover" e de "active" nos elementos  clicáveis
+ - Botão de voltar ao topo da página
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Tecnologias Utilizadas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ <p align="left">
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" alt="HTML" width="40" height="40"/>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/2048px-Official_CSS_Logo.svg.png" title="CSS" alt="CSS" width="40" height="40"/>
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>
+ </p>
+
+
+## 📂 Estrutura do Projeto
+
+ ```plaintext
+ janai-amitaf/
+ ├── css/                    # Arquivos CSS
+ │   ├── reset.css       
+ │   ├── responsive.css  
+ │   ├── style.css       
+ ├── docs/                   # Arquivos de documentação do projeto
+ │   ├── prototipos-de-tela/ 
+ │   ├── autorias.txt
+ │   ├── preview.mp4
+ ├── fonts/                  # Arquivos das fontes utilizadas  
+ │   ├── Bitter/
+ ├── img/                    # Imagens utilizadas 
+ ├── js/                     # Arquivos JavaScript
+ │   ├── menu.js
+ │   ├── nav.js
+ │   ├── topo.js
+ ├── view/                   # Arquivos de páginas secundárias
+ │   ├── cards.html
+ │   ├── cometa-heidi.html
+ │   ├── comissions-pets.html
+ │   ├── galaxia-estorias.html
+ │   ├── produtos-servicos.html
+ │   ├── projetos.html
+ ├── .gitignore
+ ├── index.html              # Arquivo principal de renderização
+ ├── LICENSE                 # Arquivo de licença do projeto
+ ├── README.md
+ ```
+
+
+## 🛠️ Instalação Local
+
+ 1. **Clone o repositório**
+ 
+ No terminal, rode o seguinte comando:
+ 
+ ```bash
+ git clone https://github.com/Enne-Amore/janai-amitaf.git
+ ```
+ 
+ 2. **Entre no arquivo "index.html"**
+ 
+ 3. **Rode o arquivo principal de renderização:**
+ 
+ Clique com o botão direito do mouse e selecione a seguinte opção:
+ 
+ ```bash
+ Open with Live Server
+ ```
+
+
+## 🌈 Cores
+
+ | Cor         | Hexadecimal |
+ | ----------- | ----------- |
+ | Rosa Clara  | `#F1ACF2`   |
+ | Rosa Neutra | `#E057F2`   |
+ | Rosa Escura | `#C522F2`   |
+ | Roxa        | `#6C0CF2`   |
+ | Amarela     | `#F2B705`   |
+ | Cinza       | `#F0F0F0`   |
+ | Preta       | `#03010D`   |
+
+
+## 🔤 Fontes Tipográficas
+
+ - **Bitter**  
+   Exemplo de uso:  
+   `font-family: "bitter";`
+
+
+## 🌟 Referências de Uso
+
+ - [Ícones do Google](https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200)
+
+
+## 🔧 Suporte
+
+ Para me contatar como suporte, o meu email é [Enne.Pessoa@gmail.com](mailto:Enne.Pessoa@gmail.com)
+
