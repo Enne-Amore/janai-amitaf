@@ -98,7 +98,7 @@
  npm run dev
  ```
  
- Abra o seu navegador e acesse http://localhost:4000 para visualizar o projeto em execução.
+ Abra o seu navegador e acesse http://localhost:3000 para visualizar o projeto em execução.
 
 
 ## 🌈 Cores
