@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <main>
       <section className={`flex flex-col justify-center gap-8 w-9/12 mx-auto my-10`}>
-        <h1 className={`bg-gradient-to-r from-[#F1ACF2] to-[#FCFAFF00] text-3xl font-medium text-shadow-2xs px-8 py-4 rounded-full`}>Projetos</h1>
+        <h2 className={`bg-gradient-to-r from-[#F1ACF2] to-[#FCFAFF00] text-3xl font-medium text-shadow-2xs px-8 py-4 rounded-full`}>Projetos</h2>
 
         <ul className={`flex gap-10 mx-10`}>
           <li className={`bg-[#F2B705] h-max rounded-4xl shadow`}>

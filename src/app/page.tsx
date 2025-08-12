@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <section className={`flex flex-col justify-center gap-8 w-9/12 mx-auto my-10`}>
-        <h1 className={`bg-gradient-to-r from-[#F1ACF2] to-[#FCFAFF00] text-3xl font-medium text-shadow-2xs px-8 py-4 rounded-full`}>Sobre</h1>
+        <h2 className={`bg-gradient-to-r from-[#F1ACF2] to-[#FCFAFF00] text-3xl font-medium text-shadow-2xs px-8 py-4 rounded-full`}>Sobre</h2>
 
         <article className={`flex items-center justify-center gap-3`}>
           <figure>
