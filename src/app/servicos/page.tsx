@@ -1,12 +1,11 @@
 import Image from "next/image";
 import servicePrice from "../../assets/precos-de-servicos.png";
 import serviceRule from "../../assets/regras-de-servicos.png";
-import styles from "./page.module.css";
 
 export default function Services() {
   return (
     <main>
-      <section className={`${styles.services}`}>
+      <section className={``}>
         <h1>Produtos e Serviços</h1>
 
         <div className="subsecoes">

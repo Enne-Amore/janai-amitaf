@@ -3,12 +3,11 @@ import cards from "../../assets/cards-capa.png";
 import pets from "../../assets/pets-capa.png";
 import cometaHeidi from "../../assets/cometa-heidi-capa.png";
 import galaxia from "../../assets/galaxia-capa.png";
-import styles from "./page.module.css";
 
 export default function Projects() {
   return (
     <main>
-      <section className={styles.projects}>
+      <section className={``}>
         <h1>Projetos</h1>
 
         <div className="cards">

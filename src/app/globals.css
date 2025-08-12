@@ -1,19 +1,32 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: "bitter";
-    src: url(../fonts/bitter/Bitter-VariableFont_wght.ttf) format(truetype);
+  font-family: "bitter";
+  src: url(../fonts/bitter/Bitter-VariableFont_wght.ttf) format(truetype);
 }
 
 :root {
-  --background: #ffffff;
+  --background: #FCFAFF;
   --foreground: #03010D;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --light-pink: #F1ACF2;
+  --pink: #E057F2;
+  --dark-pink: #C522F2;
+  --purple: #6C0CF2;
+  --yellow: #F2B705;
+  --black: #03010D;
+  --gray: #252228;
+  --white: #FCFAFF;
 }
 
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #03010D;
-    --foreground: #ededed;
+    --foreground: #FCFAFF;
   }
 } */
 
