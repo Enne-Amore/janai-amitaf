@@ -4,10 +4,10 @@ import logo from "../assets/logo.png";
 export default function Home() {
   return (
     <main>
-      <section className={``}>
-        <h1>Sobre</h1>
+      <section className={`flex flex-col justify-center gap-8 w-9/12 mx-auto my-10`}>
+        <h1 className={`bg-gradient-to-r from-[#F1ACF2] to-[#FCFAFF00] text-3xl font-medium text-shadow-2xs px-8 py-4 rounded-full`}>Sobre</h1>
 
-        <article className={``}>
+        <article className={`flex items-center justify-center gap-3`}>
           <figure>
             <Image
               src={logo}
@@ -18,14 +18,14 @@ export default function Home() {
             />
           </figure>
 
-          <div className={``}>
-            <p>
+          <div className={`bg-[#F2B705] rounded-4xl px-8 py-6 w-8/12 space-y-3 shadow`}>
+            <p className={`text-2xl text-shadow-2xs leading-9`}>
               Janai Amitáf Produções é uma empresa focada em duas frentes:
               colocar minhas histórias no mundo e ajudar outros criativos a
               botarem as suas.
             </p>
 
-            <p>
+            <p className={`text-2xl text-shadow-2xs leading-9`}>
               É uma iniciativa sobre sonhos e sobre ser apaixonado por
               espalha-los por aí. Criando para esquisites e uniques com olhos
               brilhantes e imaginação de multiverso.
