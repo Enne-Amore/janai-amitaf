@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ProjectsType } from "@/types/projectsType";
+import { allProjects } from "@/data/allProjects";
 
 export default async function Projects() {
-  const response = await fetch(`http://localhost:4000/projects`);
-  const data: ProjectsType[] = await response.json();
+  const projects: ProjectsType[] = allProjects;
 
   return (
     <main>
@@ -18,7 +18,7 @@ export default async function Projects() {
         </h2>
 
         <ul className={`flex gap-10 mx-10`}>
-          {data.map((project) => (
+          {projects.map((project) => (
             <li
               key={project.id}
               className={`bg-[#F2B705] h-max rounded-4xl shadow`}
@@ -29,13 +29,11 @@ export default async function Projects() {
               >
                 <figure className={`flex flex-col items-center`}>
                   <Image
-                    src={require(`../../assets/${project.img
-                      .split("/")
-                      .pop()}`)}
+                    src={`/assets/${project.img}`}
                     alt={project.altImg}
-                    width={0}
+                    width={300}
                     height={0}
-                    className={`rounded-t-4xl`}
+                    className={`rounded-t-4xl w-full h-auto`}
                   />
 
                   <figcaption

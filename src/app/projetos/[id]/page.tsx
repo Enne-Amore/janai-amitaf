@@ -1,55 +1,50 @@
-// import Image from "next/image";
+import Image from "next/image";
+import { projects } from "@/data/projects";
 
-export default async function Project({params} : {params: Promise<{id: string}>}) {
-  const { id } = await params;
+export default function ProjectPage({ params }: { params: { id: string } }) {
+  const project = projects.find((p) => p.id === params.id);
+
+  if (!project) {
+    return (
+      <div className="text-center mt-20 text-red-500 text-xl">
+        Projeto não encontrado
+      </div>
+    );
+  }
 
   return (
     <main>
-      <section className={`flex flex-col justify-center gap-8 w-9/12 mx-auto my-10`}>
-        <h2 className={`bg-gradient-to-r from-[#F1ACF2] to-[#FCFAFF00] text-3xl font-medium text-shadow-2xs px-8 py-4 rounded-full`} lang="en">Cards {id} </h2>
+      <section className="flex flex-col justify-center gap-8 w-9/12 mx-auto my-10">
+        <h2
+          className="bg-gradient-to-r from-[#F1ACF2] to-[#FCFAFF00] text-3xl font-medium text-shadow-2xs px-8 py-4 rounded-full"
+          lang="en"
+        >
+          {project.title}
+        </h2>
 
-        <p className={`bg-[#F2B705] text-2xl text-shadow-2xs leading-9 rounded-4xl px-8 py-6 w-8/12 shadow`}>
-          Cards colecionáveis baseados no meu trabalho ficcional, por enquanto
-          só daquele que se passa em Via Lúmina. E eles são vendidos na loja.
-        </p>
+        {project.description && (
+          <p className="bg-[#F2B705] text-2xl text-center text-shadow-2xs leading-9 rounded-4xl px-8 py-6 mx-auto w-8/12 shadow">
+            {project.description}
+          </p>
+        )}
 
-        {/* <div className="cartas">
-          <figure className="carta">
-            <Image
-              src="../img/brisa-magika-card.png"
-              alt="Card: Brisa Magika"
-              className={``}
-            />
-          </figure>
-
-          <figure className="carta">
-            <Image src="../img/cron-card.png" alt="Card: Cron" className={``} />
-          </figure>
-
-          <figure className="carta">
-            <Image
-              src="../img/terra-card.png"
-              alt="Card: Terra"
-              className={``}
-            />
-          </figure>
-
-          <figure className="carta">
-            <Image
-              src="../img/elixir-essencia-card.png"
-              alt="Card: Elixir da Essência"
-              className={``}
-            />
-          </figure>
-
-          <figure className="carta">
-            <Image
-              src="../img/crisalys-card.png"
-              alt="Card: Crisalys"
-              className={``}
-            />
-          </figure>
-        </div> */}
+        {project.images && (
+          <ul className="flex flex-wrap justify-center gap-20 w-9/12 mx-auto my-6">
+            {project.images.map((image) => (
+              <li key={image.id}>
+                <figure>
+                  <Image
+                    src={`/assets/${image.img}`}
+                    alt={image.altImg}
+                    width={200}
+                    height={0}
+                    className="rounded-4xl w-full h-72"
+                  />
+                </figure>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
     </main>
   );
