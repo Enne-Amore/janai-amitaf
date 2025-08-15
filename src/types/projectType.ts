@@ -6,5 +6,8 @@ export interface ProjectType {
     id: string;
     img: string;
     altImg: string;
-  }
+  },
+  cover: string;
+  altCover: string;
+  paragraphs: string[];
 }
