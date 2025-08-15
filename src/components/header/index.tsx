@@ -1,7 +1,25 @@
 import { MdMenu } from "react-icons/md";
-import Link from "next/link";
+import NavItem, { NavItemInterface } from "../navItem";
 
-export function Header() {
+export default function Header() {
+  const items: NavItemInterface[] = [
+    {
+      url: "/",
+      ariaLabel: "Acessar página inicial",
+      label: "Sobre",
+    },
+    {
+      url: "/projetos",
+      ariaLabel: "Acessar página de projetos",
+      label: "Projetos",
+    },
+    {
+      url: "/servicos",
+      ariaLabel: "Acessar página de serviços",
+      label: "Serviços",
+    },
+  ];
+
   return (
     <header className={`flex flex-col items-center`}>
       <div className={`bg-[#6C0CF2] w-full rounded-b-full py-8 shadow-md`}>
@@ -13,43 +31,28 @@ export function Header() {
         </button>
 
         <div className={`flex flex-col items-center gap-2 text-shadow-md`}>
-          <h1 className={`text-4xl text-[#FCFAFF] font-medium text-shadow-2xs`}>Janai Amitáf Produções</h1>
+          <h1 className={`text-4xl text-[#FCFAFF] font-medium text-shadow-2xs`}>
+            Janai Amitáf Produções
+          </h1>
 
-          <h2 className={`text-3xl text-[#F0F0F0] font-medium`}>Estórias, ilustrações e editoração</h2>
+          <h2 className={`text-3xl text-[#F0F0F0] font-medium`}>
+            Estórias, ilustrações e editoração
+          </h2>
         </div>
       </div>
 
-      <nav className={`bg-gradient-to-r from-[#C522F2] to-[#E057F2] w-8/12 rounded-b-full shadow-md`}>
+      <nav
+        className={`bg-gradient-to-r from-[#C522F2] to-[#E057F2] w-8/12 rounded-b-full shadow-md`}
+      >
         <ul className={`flex justify-center`}>
-          <li className={`px-10 py-5`}>
-            <Link
-              href="/"
-              aria-label="Ver introdução sobre"
-              className={`text-2xl text-[#FCFAFF] font-medium rounded-4xl px-10 py-5 hover:bg-[#C522F2]`}
-            >
-              Sobre
-            </Link>
-          </li>
-          
-          <li className={`px-10 py-5`}>
-            <Link
-              href="projetos"
-              aria-label="Ver quais são os projetos realizados"
-              className={`text-2xl text-[#FCFAFF] font-medium rounded-4xl px-10 py-5 hover:bg-[#C522F2]`}
-            >
-              Projetos
-            </Link>
-          </li>
-          
-          <li className={`px-10 py-5`}>
-            <Link
-              href="servicos"
-              aria-label="Ver quais são os produtos e serviços"
-              className={`text-2xl text-[#FCFAFF] font-medium rounded-4xl px-10 py-5 hover:bg-[#C522F2]`}
-            >
-              Serviços
-            </Link>
-          </li>
+          {items.map((item, index) => (
+            <NavItem
+              key={index}
+              url={item.url}
+              ariaLabel={item.ariaLabel}
+              label={item.label}
+            />
+          ))}
         </ul>
       </nav>
     </header>

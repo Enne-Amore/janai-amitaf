@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer>
       <figure>

@@ -39,7 +39,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               alt={project.altCover}
               width={260}
               height={400}
-              className={`rounded-3xl mx-auto my-5`}
+              className={`rounded-3xl mx-auto my-5 shadow`}
             />
           </figure>
         )}
@@ -67,7 +67,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
                     alt={image.altImg}
                     width={200}
                     height={0}
-                    className={`rounded-4xl w-full h-72`}
+                    className={`rounded-4xl w-full h-72 shadow`}
                   />
                 </figure>
               </li>

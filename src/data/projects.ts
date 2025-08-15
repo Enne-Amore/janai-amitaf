@@ -78,6 +78,12 @@ export const projects = [
       "Ela é cheia de vida e magia com aproximadamente 0,1% dos 300 bilhões de sistemas estelares, contendo alguma forma de vida.",
       "E estima-se que dessas sejam 3 mil espécies inteligentes, capazes de desenvolver culturas e civilizações.",
       "O mapeamento padrão é uma das poucas coisas boas impostas pelo Império do Sol, antes disso era preciso colocar os mapas de cada grande civilização um sobre o outro para chegar em algum lugar. Assim a Terra, por exemplo fica em: Terra. Gama. 5.6.3",
+      "Funciona assim:",
+      "1. Começando do quadrante superior esquerdo no mapa, chamado de Alpha, daí vamos em sentido horário: Beta, Gama e Delta, o inferior esquerdo.",
+      "2. A galáxia tem seus braços circulares marcados no mapa. Pegue seu quadrante e conte os arcos.",
+      "3. Os quadrantes são divididos por linhas de coordenada, formando dez seções. Precisa contá-las em sentido horário. ",
+      "4. Dentro dessa seção, os sistemas estelares são nomeadas com o nome do planeta com mais indivíduos conscientes. Ache o sistema desejado.",
+      "5. Agora é só contar os planetas.",
       "As localizações são indicadas com: Nome do sistema, Quadrante, Arco, Seção, Número do planeta.",
     ],
     images: [

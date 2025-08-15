@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Janai Amitáf Produções",
   description: "Janai Amitáf Produções apresenta seu portfólio web com seus projetos, serviços, produtos, e demais trabalhos artísticos",
   openGraph: {
-    title: "Janai Amitáf Produções - Portfólio Web",
+    title: "Janai Amitáf Produções",
     description: "Janai Amitáf Produções apresenta seu portfólio web com seus projetos, serviços, produtos, e demais trabalhos artísticos",
     images: ['../assets/logo.png']
   },
