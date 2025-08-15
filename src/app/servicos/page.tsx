@@ -1,6 +1,4 @@
 import Image from "next/image";
-import servicePrice from "../../assets/precos-de-servicos.png";
-import serviceRule from "../../assets/regras-de-servicos.png";
 
 export default function Services() {
   return (
@@ -12,9 +10,9 @@ export default function Services() {
           <article className={`flex justify-center`}>
             <figure>
               <Image
-                src={servicePrice}
+                src={`/assets/precos-de-servicos.png`}
                 alt="Preços do desenho: busto por 30 reais, meio-corpo por 40 reais e corpo inteiro por 50 reais"
-                width={0}
+                width={384}
                 height={0}
                 className={`w-96 h-auto rounded-l-4xl shadow`}
               />
@@ -142,9 +140,9 @@ export default function Services() {
 
             <figure className={``}>
               <Image
-                src={serviceRule}
+                src={`/assets/regras-de-servicos.png`}
                 alt="Regras do serviço: estilo de próprie artista, pagamento adiantado via PIX, discussão a cada etapa do processo, sem modificações em etapas já aprovadas, e imagens com assinatura"
-                width={0}
+                width={384}
                 height={0}
                 className={`w-96 h-auto rounded-e-4xl shadow`}
               />

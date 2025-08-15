@@ -1,5 +1,4 @@
 import Image from "next/image";
-import logo from "../assets/logo.png";
 
 export default function Home() {
   return (
@@ -10,9 +9,9 @@ export default function Home() {
         <article className={`flex items-center justify-center gap-3`}>
           <figure>
             <Image
-              src={logo}
+              src={`/assets/logo.png`}
               alt="Logo de artista: Janai Amitáf Produções"
-              width={0}
+              width={240}
               height={0}
               className={`w-60 h-auto`}
             />

@@ -46,12 +46,13 @@
  │   ├── preview.mp4
  ├── node_modules/           # Dependências do projeto
  ├── public/                 # Arquivos estáticos
- │   ├── favicon.ico
+ │   ├── assets/
  ├── src/                    # Código de fonte da aplicação
  │   ├── app/                # Arquivos principais de renderização
- │   ├── assets/             # Imagens e outros arquivos de mídia
  │   ├── components/         # Componentes reutilizáveis (como header e footer)
+ │   ├── data/               # Dados de API simulada
  │   ├── fonts/              # Fontes de texto utilizadas
+ │   ├── types/              # Tipagem de dados requisitados
  ├── .gitignore
  ├── eslint.config.mjs
  ├── LICENSE                 # Arquivo de licença do projeto
