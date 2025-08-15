@@ -26,7 +26,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
         {project.description && (
           <p
-            className={`bg-[#F2B705] text-2xl text-center text-shadow-2xs leading-9 rounded-4xl px-8 py-6 mx-auto w-8/12 shadow`}
+            className={`bg-[#F2B705] text-[#252228] text-2xl text-center text-shadow-2xs leading-9 rounded-4xl px-8 py-6 mx-auto w-8/12 shadow`}
           >
             {project.description}
           </p>
@@ -48,7 +48,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           <>
             {project.paragraphs.map((paragraph) => (
               // eslint-disable-next-line react/jsx-key
-              <p className={`text-2xl text-shadow-2xs leading-12`}>
+              <p className={`text-[#252228] text-2xl text-shadow-2xs leading-12`}>
                 {paragraph}
               </p>
             ))}

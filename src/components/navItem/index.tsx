@@ -4,6 +4,7 @@ export interface NavItemInterface {
   url: string;
   label: string;
   ariaLabel: string;
+  isActive?: boolean;
 }
 
 export default function NavItem(props: NavItemInterface) {
@@ -12,7 +13,7 @@ export default function NavItem(props: NavItemInterface) {
       <Link
         href={props.url}
         aria-label={props.ariaLabel}
-        className={`text-2xl text-[#FCFAFF] font-medium rounded-4xl px-10 py-5 hover:bg-[#C522F2]`}
+        className={`${props.isActive ? "bg-[#F2B705] text-[#252228]" : "bg-transparent text-[#FCFAFF] hover:bg-[#C522F2]"} text-2xl font-medium rounded-4xl px-10 py-5 transition`}
       >
         {props.label}
       </Link>

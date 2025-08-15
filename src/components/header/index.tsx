@@ -1,5 +1,8 @@
+"use client"
+
 import { MdMenu } from "react-icons/md";
 import NavItem, { NavItemInterface } from "../navItem";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const items: NavItemInterface[] = [
@@ -19,6 +22,8 @@ export default function Header() {
       label: "Serviços",
     },
   ];
+
+  const pathname = usePathname();
 
   return (
     <header className={`flex flex-col items-center`}>
@@ -51,6 +56,7 @@ export default function Header() {
               url={item.url}
               ariaLabel={item.ariaLabel}
               label={item.label}
+              isActive={pathname === item.url}
             />
           ))}
         </ul>
