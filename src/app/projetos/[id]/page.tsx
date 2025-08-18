@@ -45,14 +45,14 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         )}
 
         {project.paragraphs && (
-          <>
+          <div className={`max-w-[720px] mx-auto space-y-5`}>
             {project.paragraphs.map((paragraph) => (
               // eslint-disable-next-line react/jsx-key
               <p className={`text-[#252228] text-2xl text-shadow-2xs leading-12`}>
                 {paragraph}
               </p>
             ))}
-          </>
+          </div>
         )}
 
         {project.images && (
