@@ -1,8 +1,8 @@
 "use client"
 
-import { MdMenu } from "react-icons/md";
 import NavItem, { NavItemInterface } from "../navItem";
 import { usePathname } from "next/navigation";
+import MenuDialog from "../menuDialog";
 
 export default function Header() {
   const items: NavItemInterface[] = [
@@ -28,12 +28,7 @@ export default function Header() {
   return (
     <header className={`flex flex-col items-center`}>
       <div className={`bg-[#6C0CF2] w-full rounded-b-full py-8 shadow-md`}>
-        <button className={`absolute top-10 left-16`}>
-          <MdMenu
-            className={`text-[#FCFAFF] text-6xl text-shadow-2xs`}
-            aria-label="Menu de navegação"
-          />
-        </button>
+        <MenuDialog />
 
         <div className={`flex flex-col items-center gap-2 text-shadow-md`}>
           <h1 className={`text-4xl text-[#FCFAFF] font-medium text-shadow-2xs`}>

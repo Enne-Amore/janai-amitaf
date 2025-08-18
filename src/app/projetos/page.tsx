@@ -21,7 +21,7 @@ export default async function Projects() {
           {projects.map((project) => (
             <li
               key={project.id}
-              className={`bg-[#F2B705] h-max rounded-4xl shadow overflow-hidden transition hover:bg-[#E057F2] active:bg-[#C522F2]`}
+              className={`bg-[#F2B705] h-max rounded-4xl shadow overflow-hidden transition duration-300 ease-out hover:bg-[#E057F2] active:bg-[#C522F2]`}
             >
               <Link
                 href={`/projetos/${project.id}`}
@@ -33,7 +33,7 @@ export default async function Projects() {
                     alt={project.altImg}
                     width={300}
                     height={0}
-                    className={`rounded-t-4xl w-full h-auto transition hover:scale-105`}
+                    className={`rounded-t-4xl w-full h-auto transition duration-300 ease-out hover:scale-105`}
                   />
 
                   <figcaption
