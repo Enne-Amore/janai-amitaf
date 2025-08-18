@@ -77,10 +77,18 @@ export default function MenuDialog() {
         onClose={() => setIsOpen(false)}
         className={`relative z-50`}
       >
-        <DialogBackdrop transition className="fixed inset-0 bg-black/30 duration-300 ease-out data-closed:opacity-0" />
+        <DialogBackdrop
+          transition
+          className="fixed inset-0 bg-black/30 duration-300 ease-out data-closed:opacity-0"
+        />
 
-        <div className={`fixed inset-0 -top-4 -left-4 -bottom-8 flex p-4 overflow-scroll`}>
-          <DialogPanel transition className={`bg-[#FCFAFF] p-12 h-max transition duration-300 ease-out data-closed:-translate-x-4 data-closed:opacity-0`}>
+        <div
+          className={`fixed inset-0 -top-4 -left-4 -bottom-8 flex p-4 overflow-scroll`}
+        >
+          <DialogPanel
+            transition
+            className={`bg-[#FCFAFF] p-12 h-max transition duration-300 ease-out data-closed:-translate-x-4 data-closed:opacity-0`}
+          >
             <article>
               <figure className={`flex flex-col items-center gap-4`}>
                 <Image
@@ -92,8 +100,12 @@ export default function MenuDialog() {
                 />
 
                 <figcaption className={`flex flex-col items-center gap-2`}>
-                  <span className={`text-3xl text-shadow-2xs font-medium`}>Janai Amitáf Produções</span>
-                  <span className={`text-[#6C0CF2] text-xl text-shadow-2xs`}>(elu/ele)</span>
+                  <span className={`text-3xl text-shadow-2xs font-medium`}>
+                    Janai Amitáf Produções
+                  </span>
+                  <span className={`text-[#6C0CF2] text-xl text-shadow-2xs`}>
+                    (elu/ele)
+                  </span>
                 </figcaption>
               </figure>
             </article>
@@ -101,7 +113,7 @@ export default function MenuDialog() {
             {lists.map((list, index) => (
               <div key={index}>
                 <hr className={`text-[#F0F0F0] shadow-2xs my-10`} />
-                
+
                 <ListsMenu title={list.title} links={list.links} />
               </div>
             ))}
