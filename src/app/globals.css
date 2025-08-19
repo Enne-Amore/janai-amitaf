@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "bitter";
+  src: url(../fonts/bitter/Bitter-VariableFont_wght.ttf) format(truetype);
+}
+
+:root {
+  --background: #FCFAFF;
+  --foreground: #03010D;
+  --page-section-animation: fade .5s ease-out;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --light-pink: #F1ACF2;
+  --pink: #E057F2;
+  --dark-pink: #C522F2;
+  --purple: #6C0CF2;
+  --yellow: #F2B705;
+  --black: #03010D;
+  --gray: #252228;
+  --white: #FCFAFF;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #03010D;
+    --foreground: #FCFAFF;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "bitter";
+  animation: fade .5s ease-out;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-pink);
+    border-radius: 1em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--pink);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--dark-pink);
+}
+
+/* Animation */
+@keyframes fade {
+    0% {
+        transform: translateX(-5px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

@@ -10,7 +10,7 @@
 
 ## 🎞️ Pré-visualização
 
- <img src="img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
+ <img src="src/assets/preview.gif" alt="Pré-visualização do site" width="340" height="200">
 
 
 ## ⚡ Funcionalidades
@@ -25,9 +25,15 @@
 ## 🚀 Tecnologias Utilizadas
 
  <p align="left">
-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" alt="HTML" width="40" height="40"/>
-   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/2048px-Official_CSS_Logo.svg.png" title="CSS" alt="CSS" width="40" height="40"/>
-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title="React" alt="React" width="40" height="40"/>
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" title="Next.js" alt="Next.js" width="40" height="40"/>
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" title="TypeScript" alt="TypeScript" width="40" height="40"/>
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" title="Tailwind CSS" alt="Tailwind CSS" width="40" height="40"/>
+   <img src="https://images.seeklogo.com/logo-png/43/2/headless-ui-logo-png_seeklogo-434970.png" title="Headless UI" alt="Headless UI" width="40" height="40"/>
+   <img src="https://raw.githubusercontent.com/react-icons/react-icons/master/react-icons.svg" title="React Icons" alt="React Icons" width="40" height="40"/>
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" alt="Git" width="40" height="40"/>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" title="Visual Studio Code" alt="Visual Studio Code" width="40" height="40"/>
+   <img src="https://blog.greggant.com/images/posts/2019-04-25-figma/Figma.png" title="Figma" alt="Figma" width="40" height="40"/>
  </p>
 
 
@@ -35,32 +41,30 @@
 
  ```plaintext
  janai-amitaf/
- ├── css/                    # Arquivos CSS
- │   ├── reset.css       
- │   ├── responsive.css  
- │   ├── style.css       
+ ├── .next/
  ├── docs/                   # Arquivos de documentação do projeto
  │   ├── prototipos-de-tela/ 
  │   ├── autorias.txt
  │   ├── preview.mp4
- ├── fonts/                  # Arquivos das fontes utilizadas  
- │   ├── Bitter/
- ├── img/                    # Imagens utilizadas 
- ├── js/                     # Arquivos JavaScript
- │   ├── menu.js
- │   ├── nav.js
- │   ├── topo.js
- ├── view/                   # Arquivos de páginas secundárias
- │   ├── cards.html
- │   ├── cometa-heidi.html
- │   ├── comissions-pets.html
- │   ├── galaxia-estorias.html
- │   ├── produtos-servicos.html
- │   ├── projetos.html
+ ├── node_modules/           # Dependências do projeto
+ ├── public/                 # Arquivos estáticos
+ │   ├── assets/
+ ├── src/                    # Código de fonte da aplicação
+ │   ├── app/                # Arquivos principais de renderização
+ │   ├── components/         # Componentes reutilizáveis (como header e footer)
+ │   ├── data/               # Dados de API simulada
+ │   ├── fonts/              # Fontes de texto utilizadas
+ │   ├── types/              # Tipagem de dados requisitados
  ├── .gitignore
- ├── index.html              # Arquivo principal de renderização
+ ├── eslint.config.mjs
  ├── LICENSE                 # Arquivo de licença do projeto
+ ├── next-env.d.ts
+ ├── next.config.ts
+ ├── package-lock.json
+ ├── package.json
+ ├── postcss.config.mjs
  ├── README.md
+ ├── tsconfig.json
  ```
 
 
@@ -74,15 +78,30 @@
  git clone https://github.com/Enne-Amore/janai-amitaf.git
  ```
  
- 2. **Entre no arquivo "index.html"**
+ 2. **Entre no diretório do projeto:**
  
- 3. **Rode o arquivo principal de renderização:**
- 
- Clique com o botão direito do mouse e selecione a seguinte opção:
+ Navegue até o diretório do projeto clonado:
  
  ```bash
- Open with Live Server
+ cd janai-amitaf
  ```
+ 
+ 3. **Instale as dependências:**
+ 
+ Para instalar as dependências do projeto, execute:
+ 
+ ```bash
+ npm install
+ ```
+ 4. **Inicie o servidor de desenvolvimento:**
+ 
+ Para iniciar o servidor de desenvolvimento, execute:
+
+ ```bash
+ npm run dev
+ ```
+ 
+ Abra o seu navegador e acesse http://localhost:3000 para visualizar o projeto em execução.
 
 
 ## 🌈 Cores
