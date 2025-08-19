@@ -79,7 +79,7 @@ export default function MenuDialog() {
       >
         <DialogBackdrop
           transition
-          className="fixed inset-0 bg-[#252228]/30 duration-300 ease-out data-closed:opacity-0"
+          className="fixed inset-0 bg-[#252228]/50 duration-300 ease-out data-closed:opacity-0"
         />
 
         <div

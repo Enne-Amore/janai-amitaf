@@ -8,6 +8,7 @@
 :root {
   --background: #FCFAFF;
   --foreground: #03010D;
+  --page-section-animation: fade .5s ease-out;
 }
 
 @theme inline {
@@ -34,6 +35,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "bitter";
+  animation: fade .5s ease-out;
 }
 
 /* Scroll bar */
@@ -52,4 +54,16 @@ body {
 }
 ::-webkit-scrollbar-thumb:active {
     background-color: var(--dark-pink);
+}
+
+/* Animation */
+@keyframes fade {
+    0% {
+        transform: translateX(-5px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }

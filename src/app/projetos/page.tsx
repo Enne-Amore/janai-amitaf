@@ -10,7 +10,7 @@ export default async function Projects() {
   return (
     <main>
       <section
-        className={`flex flex-col justify-center gap-8 w-10/12 lg:w-9/12 mx-auto my-10`}
+        className={`flex flex-col justify-center gap-8 w-10/12 lg:w-9/12 mx-auto my-10 animate-(--page-section-animation)`}
       >
         <PageTitle label={"Projetos"} />
 
