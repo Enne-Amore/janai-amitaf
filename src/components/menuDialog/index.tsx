@@ -64,10 +64,10 @@ export default function MenuDialog() {
     <div>
       <button
         onClick={() => setIsOpen(true)}
-        className={`absolute top-10 left-16 rounded-xl px-1 cursor-pointer transition hover:bg-[#E057F2] active:bg-[#C522F2]`}
+        className={`absolute top-9 lg:top-11 left-4 lg:left-16 rounded-xl px-1 cursor-pointer transition hover:bg-[#E057F2] active:bg-[#C522F2]`}
       >
         <MdMenu
-          className={`text-[#FCFAFF] text-6xl text-shadow-2xs`}
+          className={`text-[#FCFAFF] text-4xl lg:text-6xl text-shadow-2xs`}
           aria-label="Menu de navegação"
         />
       </button>
@@ -79,7 +79,7 @@ export default function MenuDialog() {
       >
         <DialogBackdrop
           transition
-          className="fixed inset-0 bg-black/30 duration-300 ease-out data-closed:opacity-0"
+          className="fixed inset-0 bg-[#252228]/30 duration-300 ease-out data-closed:opacity-0"
         />
 
         <div
@@ -87,23 +87,24 @@ export default function MenuDialog() {
         >
           <DialogPanel
             transition
-            className={`bg-[#FCFAFF] p-12 h-max transition duration-300 ease-out data-closed:-translate-x-4 data-closed:opacity-0`}
+            className={`bg-[#FCFAFF] px-4 pt-8 pb-12 lg:p-12 max-w-9/12 lg:max-w-auto min-h-screen h-max shadow transition duration-300 ease-out data-closed:-translate-x-4 data-closed:opacity-0`}
           >
             <article>
-              <figure className={`flex flex-col items-center gap-4`}>
+              <figure className={`flex flex-col items-center gap-3 lg:gap-4`}>
                 <Image
                   src={`/assets/janai-amitaf.png`}
                   alt="Estrelas do espaço"
                   width={500}
                   height={0}
-                  className={`w-52 h-auto`}
+                  className={`w-36 lg:w-52 h-auto`}
                 />
 
-                <figcaption className={`flex flex-col items-center gap-2`}>
-                  <span className={`text-3xl text-shadow-2xs font-medium`}>
+                <figcaption className={`flex flex-col items-center gap-1 lg:gap-2`}>
+                  <span className={`text-2xl lg:text-3xl text-shadow-2xs text-center font-medium`}>
                     Janai Amitáf Produções
                   </span>
-                  <span className={`text-[#6C0CF2] text-xl text-shadow-2xs`}>
+
+                  <span className={`text-[#6C0CF2] text-lg lg:text-xl text-shadow-2xs`}>
                     (elu/ele)
                   </span>
                 </figcaption>
@@ -112,7 +113,7 @@ export default function MenuDialog() {
 
             {lists.map((list, index) => (
               <div key={index}>
-                <hr className={`text-[#F0F0F0] shadow-2xs my-10`} />
+                <hr className={`text-[#F0F0F0] shadow-2xs my-6 lg:my-10`} />
 
                 <ListsMenu title={list.title} links={list.links} />
               </div>

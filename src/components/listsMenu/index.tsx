@@ -7,8 +7,8 @@ export interface ListsMenuInterface {
 
 export default function ListsMenu(props: ListsMenuInterface) {
   return (
-    <article className={`px-6`}>
-      <h3 className={`text-2xl text-shadow-2xs font-medium mb-2`}>
+    <article className={`px-4 lg:px-6`}>
+      <h3 className={`text-xl lg:text-2xl text-shadow-2xs font-medium mb-2`}>
         {props.title}
       </h3>
 

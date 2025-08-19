@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ProjectsType } from "@/types/projectsType";
 import { allProjects } from "@/data/allProjects";
+import PageTitle from "@/components/pageTitle";
 
 export default async function Projects() {
   const projects: ProjectsType[] = allProjects;
@@ -9,15 +10,11 @@ export default async function Projects() {
   return (
     <main>
       <section
-        className={`flex flex-col justify-center gap-8 w-9/12 mx-auto my-10`}
+        className={`flex flex-col justify-center gap-8 w-10/12 lg:w-9/12 mx-auto my-10`}
       >
-        <h2
-          className={`bg-gradient-to-r from-[#F1ACF2] to-[#FCFAFF00] text-3xl font-medium text-shadow-2xs px-8 py-4 rounded-full`}
-        >
-          Projetos
-        </h2>
+        <PageTitle label={"Projetos"} />
 
-        <ul className={`flex gap-10 mx-10`}>
+        <ul className={`flex flex-col lg:flex-row gap-10 mx-14 lg:mx-10`}>
           {projects.map((project) => (
             <li
               key={project.id}
@@ -38,7 +35,7 @@ export default async function Projects() {
 
                   <figcaption
                     lang="en"
-                    className={`text-2xl text-center text-shadow-2xs px-4 pb-4`}
+                    className={`text-xl lg:text-2xl text-center text-shadow-2xs px-4 pb-4`}
                   >
                     {project.figcaption}
                   </figcaption>

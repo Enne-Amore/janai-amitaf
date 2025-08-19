@@ -27,24 +27,24 @@ export default function Header() {
 
   return (
     <header className={`flex flex-col items-center`}>
-      <div className={`bg-[#6C0CF2] w-full rounded-b-full py-8 shadow-md`}>
+      <div className={`bg-[#6C0CF2] w-full rounded-b-[30px] lg:rounded-b-[100px] py-6 lg:py-8 shadow-md`}>
         <MenuDialog />
 
-        <div className={`flex flex-col items-center gap-2 text-shadow-md`}>
-          <h1 className={`text-4xl text-[#FCFAFF] font-medium text-shadow-2xs`}>
+        <div className={`flex flex-col items-center gap-0.5 lg:gap-2 pl-20 pr-8 lg:px-0`}>
+          <h1 className={`text-[#FCFAFF] text-2xl lg:text-4xl text-shadow-2xs text-center font-semibold`}>
             Janai Amitáf Produções
           </h1>
 
-          <h2 className={`text-3xl text-[#F0F0F0] font-medium`}>
+          <h2 className={`text-[#F0F0F0] text-lg lg:text-3xl text-shadow-md text-center font-medium`}>
             Estórias, ilustrações e editoração
           </h2>
         </div>
       </div>
 
       <nav
-        className={`bg-gradient-to-r from-[#C522F2] to-[#E057F2] w-8/12 rounded-b-full shadow-md`}
+        className={`bg-gradient-to-r from-[#C522F2] to-[#E057F2] w-10/12 lg:w-8/12 rounded-b-3xl lg:rounded-b-full shadow-md`}
       >
-        <ul className={`flex justify-center`}>
+        <ul className={`flex justify-evenly lg:mx-20`}>
           {items.map((item, index) => (
             <NavItem
               key={index}

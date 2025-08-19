@@ -1,12 +1,17 @@
+import PageTitle from "@/components/pageTitle";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main>
-      <section className={`flex flex-col justify-center gap-8 w-9/12 mx-auto my-10`}>
-        <h2 className={`bg-gradient-to-r from-[#F1ACF2] to-[#FCFAFF00] text-3xl font-medium text-shadow-2xs px-8 py-4 rounded-full`}>Sobre</h2>
+      <section
+        className={`flex flex-col justify-center gap-8 w-10/12 lg:w-9/12 mx-auto my-10`}
+      >
+        <PageTitle label={"Sobre"} />
 
-        <article className={`flex items-center justify-center gap-3`}>
+        <article
+          className={`flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-3 mx-6 lg:mx-auto`}
+        >
           <figure>
             <Image
               src={`/assets/logo.png`}
@@ -17,17 +22,19 @@ export default function Home() {
             />
           </figure>
 
-          <div className={`bg-[#F2B705] rounded-4xl px-8 py-6 w-8/12 space-y-3 shadow`}>
-            <p className={`text-[#252228] text-2xl text-shadow-2xs leading-9`}>
-              Janai Amitáf Produções é uma empresa focada em duas frentes:
-              colocar minhas histórias no mundo e ajudar outros criativos a
-              botarem as suas.
+          <div
+            className={`bg-[#F2B705] rounded-3xl lg:rounded-4xl px-6 lg:px-8 py-4 lg:py-6 lg:w-8/12 space-y-3 shadow`}
+          >
+            <p
+              className={`text-[#252228] text-xl lg:text-2xl text-shadow-2xs leading-8 lg:leading-9`}
+            >
+              Janai Amitáf Produções é uma empresa focada em duas frentes: colocar minhas histórias no mundo e ajudar outros criativos a botarem as suas.
             </p>
 
-            <p className={`text-[#252228] text-2xl text-shadow-2xs leading-9`}>
-              É uma iniciativa sobre sonhos e sobre ser apaixonado por
-              espalha-los por aí. Criando para esquisites e uniques com olhos
-              brilhantes e imaginação de multiverso.
+            <p
+              className={`text-[#252228] text-xl lg:text-2xl text-shadow-2xs leading-8 lg:leading-9`}
+            >
+              É uma iniciativa sobre sonhos e sobre ser apaixonado por espalha-los por aí. Criando para esquisites e uniques com olhos brilhantes e imaginação de multiverso.
             </p>
           </div>
         </article>
