@@ -1,4 +1,5 @@
-import { Analytics } from "@vercel/analytics/next"
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -6,11 +7,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Janai Amitáf Produções",
-  description: "Janai Amitáf Produções apresenta seu portfólio web com seus projetos, serviços, produtos, e demais trabalhos artísticos",
+  description:
+    "Janai Amitáf Produções apresenta seu portfólio web com seus projetos, serviços, produtos, e demais trabalhos artísticos",
   openGraph: {
     title: "Janai Amitáf Produções",
-    description: "Janai Amitáf Produções apresenta seu portfólio web com seus projetos, serviços, produtos, e demais trabalhos artísticos",
-    images: ['../assets/logo.png']
+    description:
+      "Janai Amitáf Produções apresenta seu portfólio web com seus projetos, serviços, produtos, e demais trabalhos artísticos",
+    images: ["../../public/assets/logo.png"],
   },
   robots: {
     index: true,
@@ -18,8 +21,8 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-    }
-  }
+    },
+  },
 };
 
 export default function RootLayout({
@@ -29,14 +32,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`antialiased`}
-      >
+      <body className={`antialiased`}>
         <Header />
 
         {children}
 
         <Footer />
+
+        <GoogleAnalytics gaId="G-XYZ" />
+
+        <GoogleTagManager gtmId="GTM-XYZ" />
 
         <Analytics />
       </body>
