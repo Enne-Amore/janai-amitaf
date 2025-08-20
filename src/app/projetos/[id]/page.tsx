@@ -2,7 +2,13 @@ import Image from "next/image";
 import { projects } from "@/data/projects";
 import PageTitle from "@/components/pageTitle";
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
+interface ProjectPageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function ProjectPage({ params }: ProjectPageProps) {
   const project = projects.find((p) => p.id === params.id);
 
   if (!project) {
@@ -42,9 +48,9 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
         {project.paragraphs && (
           <div className={`max-w-[720px] mx-auto space-y-4 lg:space-y-5`}>
-            {project.paragraphs.map((paragraph) => (
-              // eslint-disable-next-line react/jsx-key
+            {project.paragraphs.map((paragraph, index) => (
               <p
+                key={index}
                 className={`text-[#252228] text-xl lg:text-2xl text-shadow-2xs leading-10 lg:leading-12`}
               >
                 {paragraph}
