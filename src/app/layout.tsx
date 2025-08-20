@@ -39,9 +39,9 @@ export default function RootLayout({
 
         <Footer />
 
-        <GoogleAnalytics gaId="G-XYZ" />
+        <GoogleAnalytics gaId="G-MSNZ7WHXYV" />
 
-        <GoogleTagManager gtmId="GTM-XYZ" />
+        <GoogleTagManager gtmId="GTM-K5LJ6R4V" />
 
         <Analytics />
       </body>
