@@ -2,9 +2,10 @@ import Image from "next/image";
 import { projects } from "@/data/projects";
 import PageTitle from "@/components/pageTitle";
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects.find((p) => p.id === params.id);
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
 
+  const project = projects.find((p) => p.id === id);
   if (!project) {
     return (
       <div className={`text-center mt-20 text-red-500 text-xl`}>
