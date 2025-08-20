@@ -5,12 +5,12 @@
 
 ## 🌐 Aplicação Hospedada
 
- [Clique aqui para acessar o website](https://enne-amore.github.io/janai-amitaf/)
+ [Clique aqui para acessar o website](https://janai-amitaf.vercel.app)
 
 
 ## 🎞️ Pré-visualização
 
- <img src="src/assets/preview.gif" alt="Pré-visualização do site" width="340" height="200">
+ <img src="/public/assets/preview.gif" alt="Pré-visualização do site" width="340" height="200">
 
 
 ## ⚡ Funcionalidades
