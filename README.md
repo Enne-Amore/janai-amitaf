@@ -10,7 +10,7 @@
 
 ## 🎞️ Pré-visualização
 
- <img src="/public/assets/preview.gif" alt="Pré-visualização do site" width="340" height="200">
+ <img src="https://github.com/Enne-Amore/janai-amitaf/blob/main/public/assets/preview.gif?raw=true" alt="Pré-visualização do site" width="340" height="200">
 
 
 ## ⚡ Funcionalidades
