@@ -2,13 +2,7 @@ import Image from "next/image";
 import { projects } from "@/data/projects";
 import PageTitle from "@/components/pageTitle";
 
-interface ProjectPageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function ProjectPage({ params }: ProjectPageProps) {
+export default function ProjectPage({ params }: { params: { id: string } }) {
   const project = projects.find((p) => p.id === params.id);
 
   if (!project) {
