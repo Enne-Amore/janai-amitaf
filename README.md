@@ -29,7 +29,7 @@
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" title="Next.js" alt="Next.js" width="40" height="40"/>
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" title="TypeScript" alt="TypeScript" width="40" height="40"/>
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" title="Tailwind CSS" alt="Tailwind CSS" width="40" height="40"/>
-   <img src="https://images.seeklogo.com/logo-png/43/2/headless-ui-logo-png_seeklogo-434970.png" title="Headless UI" alt="Headless UI" width="40" height="40"/>
+   <img src="https://raw.githubusercontent.com/nuxt/modules/main/icons/headlessui.png" title="Headless UI" alt="Headless UI" width="40" height="40"/>
    <img src="https://raw.githubusercontent.com/react-icons/react-icons/master/react-icons.svg" title="React Icons" alt="React Icons" width="40" height="40"/>
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" alt="Git" width="40" height="40"/>
    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" title="Visual Studio Code" alt="Visual Studio Code" width="40" height="40"/>
@@ -45,10 +45,12 @@
  ├── docs/                   # Arquivos de documentação do projeto
  │   ├── prototipos-de-tela/ 
  │   ├── autorias.txt
+ │   ├── logo.png
  │   ├── preview.mp4
+ │   ├── style-guide.jpg
  ├── node_modules/           # Dependências do projeto
  ├── public/                 # Arquivos estáticos
- │   ├── assets/
+ │   ├── assets/             # Imagens utilizadas
  ├── src/                    # Código de fonte da aplicação
  │   ├── app/                # Arquivos principais de renderização
  │   ├── components/         # Componentes reutilizáveis (como header e footer)
