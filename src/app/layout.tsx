@@ -15,6 +15,9 @@ export const metadata: Metadata = {
       "Janai Amitáf Produções apresenta seu portfólio web com seus projetos, serviços, produtos, e demais trabalhos artísticos",
     images: ["https://file.notion.so/f/f/8e94c5ee-34b2-42f2-9819-2827a3d9c49c/05d8edaf-3316-4296-a61b-7dbc1996ae00/image.png?table=block&id=2557c96a-496e-8011-af89-f54f6b0a180a&spaceId=8e94c5ee-34b2-42f2-9819-2827a3d9c49c&expirationTimestamp=1755734400000&signature=l_Dd9YvJkND7Nb0j1jdSa1Tr5Ruae_Ocbg-SDs4o1yY&downloadName=image.png"],
   },
+  verification: {
+    google: "N2dwzMN_2Th96csMroFlIe8sR3g7oWyBad-oQcxxWxA"
+  },
   robots: {
     index: true,
     follow: true,
