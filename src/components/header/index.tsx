@@ -44,7 +44,7 @@ export default function Header() {
       <nav
         className={`bg-gradient-to-r from-[#C522F2] to-[#E057F2] w-10/12 lg:w-8/12 rounded-b-3xl lg:rounded-b-full shadow-md`}
       >
-        <ul className={`flex justify-evenly lg:mx-20`}>
+        <ul className={`flex justify-evenly lg:mx-20`} role="menu">
           {items.map((item, index) => (
             <NavItem
               key={index}

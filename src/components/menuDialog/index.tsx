@@ -95,7 +95,7 @@ export default function MenuDialog() {
                   src={`/assets/janai-amitaf.png`}
                   alt="Estrelas do espaço"
                   width={144}
-                  height={149}
+                  height={144}
                   className={`w-36 lg:w-52 h-auto drop-shadow`}
                 />
 

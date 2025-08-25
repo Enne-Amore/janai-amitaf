@@ -9,7 +9,7 @@ export interface NavItemInterface {
 
 export default function NavItem(props: NavItemInterface) {
   return (
-    <li className={`py-3 lg:py-5`}>
+    <li className={`py-3 lg:py-5`} role="none">
       <Link
         href={props.url}
         aria-label={props.ariaLabel}
@@ -18,6 +18,7 @@ export default function NavItem(props: NavItemInterface) {
             ? "bg-[#F2B705] text-[#252228] shadow"
             : "bg-transparent text-[#FCFAFF] hover:bg-[#C522F2] hover:shadow"
         } text-xl lg:text-2xl font-medium rounded-4xl px-4 lg:px-10 py-3 lg:py-5 transition`}
+        role="menuitem"
       >
         {props.label}
       </Link>
