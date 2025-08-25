@@ -8,7 +8,7 @@ export default function Footer() {
           src={`/assets/estrelas.png`}
           alt="Estrelas do espaço"
           width={1580}
-          height={0}
+          height={100}
           className={`w-screen h-auto`}
         />
       </figure>

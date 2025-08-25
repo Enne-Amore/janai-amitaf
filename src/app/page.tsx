@@ -17,7 +17,7 @@ export default function Home() {
               src={`/assets/logo.png`}
               alt="Logo de artista: Janai Amitáf Produções"
               width={240}
-              height={0}
+              height={240}
               className={`w-60 h-auto`}
             />
           </figure>
