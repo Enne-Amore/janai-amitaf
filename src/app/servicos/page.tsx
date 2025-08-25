@@ -41,7 +41,7 @@ export default function Services() {
           <article className={`flex flex-col lg:flex-row justify-center`}>
             <figure>
               <Image
-                src={`/assets/precos-de-servicos.png`}
+                src={`/assets/precos-de-servicos.avif`}
                 alt="Preços do desenho: busto por 30 reais, meio-corpo por 40 reais e corpo inteiro por 50 reais"
                 width={384}
                 height={384}
@@ -50,7 +50,7 @@ export default function Services() {
             </figure>
 
             <div
-              className={`flex flex-col items-center gap-1.5 bg-[#F2B705] lg:w-5/12 h-max px-6 pt-5 pb-6 rounded-b-3xl lg:rounded-bl-none lg:rounded-e-4xl space-y-5 shadow`}
+              className={`flex flex-col items-center gap-1.5 bg-[#F2B705] lg:w-5/12 h-max px-6 pt-5 pb-6 rounded-b-3xl lg:rounded-bl-none lg:rounded-br-4xl lg:rounded-tr-4xl space-y-5 shadow`}
             >
               <p
                 className={`text-[#252228] text-xl lg:text-2xl text-shadow-2xs leading-9`}
@@ -105,11 +105,11 @@ export default function Services() {
 
             <figure className={``}>
               <Image
-                src={`/assets/regras-de-servicos.png`}
+                src={`/assets/regras-de-servicos.avif`}
                 alt="Regras do serviço: estilo de próprie artista, pagamento adiantado via PIX, discussão a cada etapa do processo, sem modificações em etapas já aprovadas, e imagens com assinatura"
                 width={384}
                 height={384}
-                className={`w-96 h-auto rounded-b-3xl lg:rounded-e-4xl shadow`}
+                className={`w-96 h-auto rounded-b-3xl lg:rounded-b-4xl lg:rounded-tr-4xl shadow`}
               />
             </figure>
           </article>
