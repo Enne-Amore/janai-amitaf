@@ -39,16 +39,6 @@ export default function Home() {
           </div>
         </article>
       </section>
-
-      <span
-        className="material-symbols-outlined sr-only"
-        id="topo"
-        aria-hidden="true"
-        aria-label="Volte ao topo da página clicando aqui"
-        tabIndex={0}
-      >
-        shift
-      </span>
     </main>
   );
 }

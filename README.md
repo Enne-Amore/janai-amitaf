@@ -19,7 +19,6 @@
  - Barra horizontal de navegação entre páginas
  - Mais acessibilidade usando a tecla "tab"
  - Efeitos de "hover" e de "active" nos elementos  clicáveis
- - Botão de voltar ao topo da página
 
 
 ## 🚀 Tecnologias Utilizadas
