@@ -15,8 +15,8 @@ export default function NavItem(props: NavItemInterface) {
         aria-label={props.ariaLabel}
         className={`${
           props.isActive
-            ? "bg-[#F2B705] text-[#252228]"
-            : "bg-transparent text-[#FCFAFF] hover:bg-[#C522F2]"
+            ? "bg-[#F2B705] text-[#252228] shadow"
+            : "bg-transparent text-[#FCFAFF] hover:bg-[#C522F2] hover:shadow"
         } text-xl lg:text-2xl font-medium rounded-4xl px-4 lg:px-10 py-3 lg:py-5 transition`}
       >
         {props.label}

@@ -5,10 +5,10 @@ export default function Footer() {
     <footer>
       <figure>
         <Image
-          src={`/assets/estrelas.png`}
+          src={`/assets/rodape.png`}
           alt="Estrelas do espaço"
           width={1580}
-          height={0}
+          height={100}
           className={`w-screen h-auto`}
         />
       </figure>

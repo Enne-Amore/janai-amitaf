@@ -43,9 +43,9 @@
  janai-amitaf/
  ├── .next/
  ├── docs/                   # Arquivos de documentação do projeto
+ │   ├── favicon/
  │   ├── prototipos-de-tela/ 
  │   ├── autorias.txt
- │   ├── logo.png
  │   ├── preview.mp4
  │   ├── style-guide.jpg
  ├── node_modules/           # Dependências do projeto

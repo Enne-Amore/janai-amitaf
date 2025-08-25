@@ -29,7 +29,7 @@ export default async function Projects() {
                     src={`/assets/${project.img}`}
                     alt={project.altImg}
                     width={300}
-                    height={0}
+                    height={190}
                     className={`rounded-t-4xl w-full h-auto transition duration-300 ease-out hover:scale-105`}
                   />
 

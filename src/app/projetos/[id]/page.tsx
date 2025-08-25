@@ -64,8 +64,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                   <Image
                     src={`/assets/${image.img}`}
                     alt={image.altImg}
-                    width={200}
-                    height={0}
+                    width={202}
+                    height={288}
                     className={`rounded-3xl lg:rounded-4xl lg:w-full lg:h-72 shadow`}
                   />
                 </figure>

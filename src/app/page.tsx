@@ -14,10 +14,10 @@ export default function Home() {
         >
           <figure>
             <Image
-              src={`/assets/logo.png`}
+              src={`/assets/logo.avif`}
               alt="Logo de artista: Janai Amitáf Produções"
               width={240}
-              height={0}
+              height={240}
               className={`w-60 h-auto`}
             />
           </figure>
