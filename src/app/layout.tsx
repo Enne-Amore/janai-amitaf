@@ -9,12 +9,28 @@ export const metadata: Metadata = {
   title: "Janai Amitáf Produções",
   description:
     "Janai Amitáf Produções apresenta seu portfólio web com seus projetos, serviços, produtos, e demais trabalhos artísticos",
+  authors: [{ name: "Janai Amitáf Produções", url: "https://janai-amitaf.vercel.app" }],
   openGraph: {
+    type: "website",
     title: "Janai Amitáf Produções",
     description:
       "Janai Amitáf Produções apresenta seu portfólio web com seus projetos, serviços, produtos, e demais trabalhos artísticos",
-    images: ["https://file.notion.so/f/f/8e94c5ee-34b2-42f2-9819-2827a3d9c49c/05d8edaf-3316-4296-a61b-7dbc1996ae00/image.png?table=block&id=2557c96a-496e-8011-af89-f54f6b0a180a&spaceId=8e94c5ee-34b2-42f2-9819-2827a3d9c49c&expirationTimestamp=1755734400000&signature=l_Dd9YvJkND7Nb0j1jdSa1Tr5Ruae_Ocbg-SDs4o1yY&downloadName=image.png"],
+    images: ["https://github.com/Enne-Amore/janai-amitaf/blob/main/docs/favicon/logo.png?raw=true"],
+    url: "https://janai-amitaf.vercel.app",
+    siteName: "Janai Amitáf Produções"
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "https://janai-amitaf.vercel.app",
+    title: "Janai Amitáf Produções",
+    description: "Janai Amitáf Produções apresenta seu portfólio web com seus projetos, serviços, produtos, e demais trabalhos artísticos",
+    images: "https://github.com/Enne-Amore/janai-amitaf/blob/main/public/favicon/logo.png?raw=true"
+  },
+  icons: {
+    icon: "/public/favicon/favicon-32x32.png",
+    apple: "/public/favicon/apple-touch-icon.png",
+  },
+  manifest: "/public/favicon/site.webmanifest",
   verification: {
     google: "N2dwzMN_2Th96csMroFlIe8sR3g7oWyBad-oQcxxWxA"
   },

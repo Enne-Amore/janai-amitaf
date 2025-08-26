@@ -1,4 +1,6 @@
-# 🌟 Janai Amitáf Produções
+<img src="public/favicon/apple-touch-icon.png" alt="Logo do site" width="60" height="60">
+
+# Janai Amitáf Produções
 
  Portfólio web de Janai que apresenta suas principais obras artísticas
 
@@ -19,7 +21,6 @@
  - Barra horizontal de navegação entre páginas
  - Mais acessibilidade usando a tecla "tab"
  - Efeitos de "hover" e de "active" nos elementos  clicáveis
- - Botão de voltar ao topo da página
 
 
 ## 🚀 Tecnologias Utilizadas
@@ -43,7 +44,6 @@
  janai-amitaf/
  ├── .next/
  ├── docs/                   # Arquivos de documentação do projeto
- │   ├── favicon/
  │   ├── prototipos-de-tela/ 
  │   ├── autorias.txt
  │   ├── preview.mp4
@@ -51,6 +51,7 @@
  ├── node_modules/           # Dependências do projeto
  ├── public/                 # Arquivos estáticos
  │   ├── assets/             # Imagens utilizadas
+ │   ├── favicon/            # Ícones do site
  ├── src/                    # Código de fonte da aplicação
  │   ├── app/                # Arquivos principais de renderização
  │   ├── components/         # Componentes reutilizáveis (como header e footer)
