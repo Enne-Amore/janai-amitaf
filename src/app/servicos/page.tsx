@@ -63,7 +63,7 @@ export default function Services() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Encomendar desenho via formulário"
-                className={`bg-[#C522F2] text-[#FCFAFF] text-xl lg:text-2xl text-shadow-2xs text-center font-semibold px-8 py-4 rounded-3xl lg:rounded-full shadow transition hover:bg-[#6C0CF2] active:bg-[#FCFAFF] active:text-[#6C0CF2]`}
+                className={`bg-[#C522F2] text-[#FCFAFF] text-xl lg:text-2xl text-shadow-2xs text-center font-semibold px-8 py-4 rounded-3xl lg:rounded-full shadow transition hover:bg-[#6C0CF2] focus-visible:bg-[#6C0CF2] active:bg-[#FCFAFF] active:text-[#6C0CF2]`}
               >
                 Encomendar Desenho
               </a>
@@ -97,7 +97,7 @@ export default function Services() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Encomendar desenho via formulário"
-                className={`bg-[#C522F2] text-[#FCFAFF] text-xl lg:text-2xl text-shadow-2xs text-center font-semibold px-8 py-4 rounded-3xl lg:rounded-full shadow transition hover:bg-[#6C0CF2] active:bg-[#FCFAFF] active:text-[#6C0CF2]`}
+                className={`bg-[#C522F2] text-[#FCFAFF] text-xl lg:text-2xl text-shadow-2xs text-center font-semibold px-8 py-4 rounded-3xl lg:rounded-full shadow transition hover:bg-[#6C0CF2] focus-visible:bg-[#6C0CF2] active:bg-[#FCFAFF] active:text-[#6C0CF2]`}
               >
                 Encomendar Desenho
               </a>

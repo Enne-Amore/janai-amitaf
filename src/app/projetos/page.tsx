@@ -18,13 +18,14 @@ export default async function Projects() {
           {projects.map((project) => (
             <li
               key={project.id}
-              className={`bg-[#F2B705] h-max rounded-4xl shadow overflow-hidden transition duration-300 ease-out hover:bg-[#E057F2] active:bg-[#C522F2]`}
+              className={`bg-[#F2B705] h-max rounded-4xl shadow transition duration-300 ease-out hover:bg-[#E057F2] active:bg-[#C522F2]`}
             >
               <Link
                 href={`/projetos/${project.id}`}
                 aria-label={`Ir à página do projeto: ${project.figcaption}`}
+                className={`rounded-4xl`}
               >
-                <figure className={`flex flex-col items-center gap-4`}>
+                <figure className={`flex flex-col items-center gap-4 rounded-t-4xl overflow-hidden`}>
                   <Image
                     src={`/assets/${project.img}`}
                     alt={project.altImg}
