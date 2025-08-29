@@ -1,6 +1,6 @@
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { useState } from "react";
-import { MdMenu } from "react-icons/md";
+import { MdClose, MdMenu } from "react-icons/md";
 import Image from "next/image";
 import ListsMenu, { ListsMenuInterface } from "../listsMenu";
 
@@ -63,8 +63,9 @@ export default function MenuDialog() {
   return (
     <div>
       <button
+        type="button"
         onClick={() => setIsOpen(true)}
-        className={`absolute top-9 lg:top-11 left-4 lg:left-16 rounded-xl px-1 cursor-pointer transition hover:bg-[#E057F2] active:bg-[#C522F2]`}
+        className={`absolute top-9 lg:top-11 left-4 lg:left-16 rounded-xl px-1 cursor-pointer transition hover:bg-[#E057F2] focus-visible:bg-[#E057F2] active:bg-[#C522F2]`}
       >
         <MdMenu
           className={`text-[#FCFAFF] text-4xl lg:text-6xl text-shadow-2xs`}
@@ -89,6 +90,17 @@ export default function MenuDialog() {
             transition
             className={`bg-[#FCFAFF] px-4 pt-8 pb-12 lg:p-12 max-w-9/12 lg:max-w-auto min-h-screen h-max shadow transition duration-300 ease-out data-closed:-translate-x-4 data-closed:opacity-0`}
           >
+            <button
+              type="button"
+              onClick={() => setIsOpen(false)}
+              className={`-mt-3 lg:-mt-2 p-2 rounded-full cursor-pointer transition hover:bg-[#F0F0F0] focus-visible:bg-[#F0F0F0] active:bg-[#252228]/10`}
+            >
+              <MdClose
+                className={`text-[#252228] text-3xl lg:text-4xl text-shadow-2xs`}
+                aria-label="Fechar o menu de navegação"
+              />
+            </button>
+
             <article>
               <figure className={`flex flex-col items-center gap-3 lg:gap-4`}>
                 <Image
