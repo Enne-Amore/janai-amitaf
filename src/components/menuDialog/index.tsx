@@ -108,7 +108,7 @@ export default function MenuDialog() {
                   alt="Estrelas do espaço"
                   width={144}
                   height={144}
-                  className={`w-36 lg:w-52 h-auto drop-shadow`}
+                  className={`bg-[#F0F0F0] w-36 lg:w-52 h-auto drop-shadow rounded-full`}
                 />
 
                 <figcaption className={`flex flex-col items-center gap-1 lg:gap-2`}>

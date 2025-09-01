@@ -36,7 +36,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
               alt={project.altCover}
               width={260}
               height={400}
-              className={`rounded-3xl mx-auto my-2 lg:my-5 shadow`}
+              className={`bg-[#F0F0F0] rounded-3xl mx-auto my-2 lg:my-5 shadow`}
             />
           </figure>
         )}
@@ -66,7 +66,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                     alt={image.altImg}
                     width={202}
                     height={288}
-                    className={`rounded-3xl lg:rounded-4xl lg:w-full lg:h-72 shadow`}
+                    className={`bg-[#F0F0F0] rounded-3xl lg:rounded-4xl lg:w-full lg:h-72 shadow`}
                   />
                 </figure>
               </li>
