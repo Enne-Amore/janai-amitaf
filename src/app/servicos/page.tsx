@@ -45,7 +45,7 @@ export default function Services() {
                 alt="Preços do desenho: busto por 30 reais, meio-corpo por 40 reais e corpo inteiro por 50 reais"
                 width={384}
                 height={384}
-                className={`w-96 h-auto rounded-t-3xl lg:rounded-t-none lg:rounded-b-4xl lg:rounded-l-4xl shadow`}
+                className={`bg-[#F0F0F0] w-96 h-auto rounded-t-3xl lg:rounded-t-none lg:rounded-b-4xl lg:rounded-l-4xl shadow`}
               />
             </figure>
 
@@ -109,7 +109,7 @@ export default function Services() {
                 alt="Regras do serviço: estilo de próprie artista, pagamento adiantado via PIX, discussão a cada etapa do processo, sem modificações em etapas já aprovadas, e imagens com assinatura"
                 width={384}
                 height={384}
-                className={`w-96 h-auto rounded-b-3xl lg:rounded-b-4xl lg:rounded-tr-4xl shadow`}
+                className={`bg-[#F0F0F0] w-96 h-auto rounded-b-3xl lg:rounded-b-4xl lg:rounded-tr-4xl shadow`}
               />
             </figure>
           </article>
