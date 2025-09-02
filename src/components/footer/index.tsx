@@ -6,7 +6,7 @@ export default function Footer() {
       <figure>
         <Image
           src={`/assets/rodape.png`}
-          alt="Estrelas do espaço"
+          alt=""
           width={1580}
           height={100}
           className={`w-screen h-auto`}
